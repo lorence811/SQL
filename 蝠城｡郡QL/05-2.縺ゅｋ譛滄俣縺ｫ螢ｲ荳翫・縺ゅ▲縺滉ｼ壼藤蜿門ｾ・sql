@@ -11,3 +11,22 @@ EXISTSÇégÇ¡Çƒï\åªÇ∑ÇÈÅB
 
 */
 
+select
+mk.KAIIN_ID,
+mk.RUISEKI_POINT
+
+
+from
+MS_KAIIN mk
+
+where 1=1
+and EXISTS(
+		select	1
+
+		from TR_URIAGE t
+		
+		where 1=1 and t.MISE_CD ='0001' and t.URIAGE_YMD between '20130402' and '20130405' and mk.KAIIN_ID = t.KAIIN_ID
+		)
+
+order by 
+mk.KAIIN_ID

@@ -8,4 +8,19 @@
 以下の項目でソートすること
  URIAGE_YMD		売上.売上日付
 */
+select
+TR_URIAGE.URIAGE_YMD,
+count(*)
 
+from
+TR_URIAGE
+
+where 1=1
+and TR_URIAGE.MISE_CD = '0001'
+and TR_URIAGE.URIAGE_YMD between '20130401' and '20130425'
+
+group by
+TR_URIAGE.URIAGE_YMD
+
+order by
+TR_URIAGE.URIAGE_YMD

@@ -14,3 +14,26 @@
 以下の項目でソートすること
  URIAGE_MEISAI_REC		売上明細.売上明細行番号
 */
+select
+um.URIAGE_NO,
+um.URIAGE_MEISAI_REC,
+sh.SHOHIN_HYOJI_NAME,
+um.HAMBAI_TANKA,
+um.HAMBAI_KOSU,
+k.KBN_VALUE as NEBIKI_HYOJI,
+um.NEBIKI_KINGAKU,
+um.TANPIN_POINT
+
+from
+TR_URIAGE_MEISAI um,
+MS_SHOHIN_HAMBAI sh,
+MS_KBN k
+
+where 1=1
+and um.URIAGE_NO = '10000073'
+and k.KBN_CD(+) = '00002'
+and um.NEBIKI_KBN = k.KBN(+)
+and sh.HAMBAI_CD = um.HAMBAI_CD
+
+order by
+um.URIAGE_MEISAI_REC
