@@ -1,0 +1,16 @@
+/*
+売上番号10000073の売上明細を取得しよう(値引き区分が設定されていないデータも取得する)
+
+取得項目は以下とする
+ URIAGE_NO				売上明細.売上番号
+ URIAGE_MEISAI_REC		売上明細.売上明細行番号
+ SHOHIN_HYOJI_NAME		商品マスタ（販売）.商品表示名
+ HAMBAI_TANKA			売上明細.販売単価
+ HAMBAI_KOSU			売上明細.販売個数
+ NEBIKI_HYOJI			区分マスタの区分コード'00002'（値引区分）から区分値（KBN_VALUE）を取得すること
+ NEBIKI_KINGAKU			売上明細.値引金額
+ TANPIN_POINT			売上明細.単品ポイント
+
+以下の項目でソートすること
+ URIAGE_MEISAI_REC		売上明細.売上明細行番号
+*/

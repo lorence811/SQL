@@ -1,0 +1,23 @@
+/*
+売上番号10000073の売上を取得しよう。
+
+取得項目は、以下とする
+ URIAGE_NO					売上.売上番号
+ URIAGE_YMD					売上.売上日付
+ URIAGE_HM					売上.売上時刻
+ SHOKEI_KOSU				売上.小計個数
+ GENKEI_KINGAKU				売上.現計金額
+ AZUKARI_KINGAKU			売上.預かり金額
+ OTSURI_KINGAKU				売上.おつり（預かり金額 - 現計金額）
+ UCHIZEI_TAISHO_KINGAKU		売上.内税対象金額
+ SHOHIZEI_KINGAKU			売上.消費税金額
+ KAIIN_ID					売上.会員ID
+ RUISEKI_POINT				売上.累積ポイント
+ TSUJO_POINT				売上.通常ポイント
+ SERVICEDAY_POINT			売上.サービスデイポイント
+ TANPIN_POINT_SUM			売上.単品ポイント合計
+ KONKAI_POINT				売上.通常ポイント+売上.サービスデイポイント+売上.単品ポイント合計
+ CACHER_ID					売上.キャッシャーID
+ REGISTER_CD				売上.レジCD
+
+*/
